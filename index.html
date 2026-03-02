@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Rafi - Professional Modeling Application Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for WhatsApp Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="hero-bg-container"></div>
+
+    <header>
+        <nav>
+            <div class="logo">MR RAAFI</div>
+            <ul class="nav-links">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#uploader">Uploader</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="glass-container hero-content">
+                <h1 class="welcome-title">Mr Raafi </h1>
+                <p class="hero-tagline">Your Professional Hub for Advanced Modeling and Hacking Applications.</p>
+                <div class="hero-stats">
+                    <div class="stat-item"><span class="stat-val">2.4k+</span><span class="stat-label">Active
+                            Users</span></div>
+                    <div class="stat-item"><span class="stat-val">150+</span><span
+                            class="stat-label">Applications</span></div>
+                    <div class="stat-item"><span class="stat-val">99%</span><span class="stat-label">Security
+                            Rate</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="uploader" class="section-container">
+            <h2 class="section-title">Upload Core Modules</h2>
+            <div class="glass-container uploader-zone" id="dropzone">
+                <div class="upload-icon">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                </div>
+                <h3>Drag & Drop Files</h3>
+                <p>Drag your modeling application files here or click to browse.</p>
+                <input type="file" id="fileInput" multiple style="display: none;">
+                <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">Browse
+                    Files</button>
+                <div id="file-list" class="file-list"></div>
+            </div>
+        </section>
+
+        <section id="applications" class="section-container">
+            <h2 class="section-title">Modeling Application Repository</h2>
+            <div class="apps-grid">
+                <div class="glass-container app-card">
+                    <div class="app-icon purple">AI</div>
+                    <h4>AI Model Engine v2.0</h4>
+                    <p>Core neural network framework for modeling simulations.</p>
+                    <button class="btn btn-secondary">Download</button>
+                </div>
+                <div class="glass-container app-card">
+                    <div class="app-icon cyan">SEC</div>
+                    <h4>Encryption Module</h4>
+                    <p>Secure layer for application data protection.</p>
+                    <button class="btn btn-secondary">Download</button>
+                </div>
+                <div class="glass-container app-card special">
+                    <div class="app-icon gold">RAFI</div>
+                    <h4>MR Rafi Special Pack</h4>
+                    <p>Exclusive toolkit for premium community members.</p>
+                    <button class="btn btn-secondary">Unlock now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- New section for Dynamic Uploads -->
+        <section id="uploaded-apps" class="section-container" style="display: none;">
+            <h2 class="section-title">Your Uploaded Applications</h2>
+            <div class="apps-grid" id="dynamic-apps-container">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-overlay"></div>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">MR RAAFI</div>
+                    <p>Premium hacking and modeling dashboard for the elite community.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Support & Contact</h4>
+                    <ul class="support-links">
+                        <li><a href="https://wa.me/923020580853" class="whatsapp-link" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Mr Raafi (03020580853)
+                            </a></li>
+                        <li><a href="#">Updates Log</a></li>
+                        <li><a href="#">Security Protocol</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow the Grid</h4>
+                    <div class="social-icons">
+                        <!-- Placeholder icons -->
+                        <span class="social-icon">TG</span>
+                        <span class="social-icon">DS</span>
+                        <span class="social-icon">GH</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 MR Rafi Portal. All core systems functional.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
